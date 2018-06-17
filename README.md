@@ -1,2 +1,2 @@
 # facebook-about-page-parser
-Parsing Facebook About page from person profile to json format
+Parsing Facebook About page from html to json format
