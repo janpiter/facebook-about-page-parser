@@ -7,7 +7,7 @@ CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 if __name__ == '__main__':
 
-    pe = ExtractFacebookProfile()
+    efp = ExtractFacebookProfile()
     sample_directory = os.listdir('{}/tests'.format(CURRENT_DIR))
 
     for sample_file in sample_directory:
@@ -16,7 +16,7 @@ if __name__ == '__main__':
             print 'Parsing file {}:'.format(sample_file)
             print '-' * 100
             sample_data = open('{}/tests/{}'.format(CURRENT_DIR, sample_file))
-            result = pe.get(sample_data)
+            result = efp.get(sample_data)
             if result:
                 print json.dumps(result, indent=4)
             print '=' * 100
