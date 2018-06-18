@@ -1,5 +1,5 @@
 # Facebook About Page Parser
-Parsing **About Page** at Facebook profile from html to json format.
+Parsing **About Page** at Facebook profile from html to dictionary.
 
 This code is for parsing only, doesn't include code for downloading the page.
 
