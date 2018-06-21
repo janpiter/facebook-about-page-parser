@@ -1,6 +1,6 @@
 import os
 import json
-from facebook_profile_extractor import ExtractFacebookProfile
+from src.parser import ExtractFacebookProfile
 
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -21,3 +21,4 @@ if __name__ == '__main__':
                 print json.dumps(result, indent=4)
             print '=' * 100
             print
+            exit()
