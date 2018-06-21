@@ -21,4 +21,3 @@ if __name__ == '__main__':
                 print json.dumps(result, indent=4)
             print '=' * 100
             print
-            exit()
