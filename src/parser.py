@@ -5,7 +5,7 @@ import urllib2
 
 from bs4 import BeautifulSoup
 
-from lib.helper import is_numeric
+from lib.helper import is_numeric, is_string
 from lib.logger import logger
 from lib.regex_pattern import *
 
@@ -282,7 +282,7 @@ class ExtractFacebookProfile:
 
     def get(self, html_data):
         try:
-            self.bf_soup = BeautifulSoup(html_data, 'lxml')
+            self.bf_soup = BeautifulSoup(html_data, 'lxml') if is_string(html_data) else html_data
             self.get_id()
             self.get_name()
             self.get_picture()

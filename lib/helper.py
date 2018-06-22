@@ -9,6 +9,13 @@ def is_numeric(value):
         return False
 
 
+def is_string(value):
+    try:
+        return isinstance(str(value), long)
+    except ValueError:
+        return False
+
+
 def current_time():
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
